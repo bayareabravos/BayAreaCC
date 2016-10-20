@@ -358,10 +358,13 @@
 <div id=team class="container text-center" ng-controller="myCtrl">
     Our Team <br>
     <div class="row">
-        <div class="col-sm-2" ng-repeat="player in players"> 
+        <div class="col-sm-2" ng-repeat="player in players|limitTo:6"> 
         <p class="text-center" >{{player.name}}
             <img ng-src={{player.imageUrl}} alt="image" class="img-circle person" width="125" height="125"></p>
         </div>
+    </div>
+    <div>
+        <a href="">More..</a>
     </div>
 </div>
     
