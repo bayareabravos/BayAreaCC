@@ -274,12 +274,47 @@
     ]
         
 });
+    
+    
+    
+demoApp.controller('topPerformers', function($scope) {
+    $scope.performers = [
+        {
+            LeagueName:'NCCA Premier Prestige 2016'
+            players:[]
+        }
+        {
+            name:'Barry Manogaran',
+            category:'Best Batsman',
+            runs:'643',
+            wickets:'',
+            stats:'',
+            imageUrl: 'images/blankImage.gif'
+        },
+        {
+            name:'Karthik Rayala',
+            category:'Best Bowler',
+            runs:'',
+            wickets:'41',
+            stats:'',
+            imageUrl: 'images/blankImage.gif'
+        },
+        {
+            name:'Sai Giridhar',
+            category:'Best Fielder',
+            runs:'',
+            wickets:'',
+            stats:'19',
+            imageUrl: 'images/blankImage.gif'
+        }
+    ]
+});
 </script>
     
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" >
+         
 
-  
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -288,14 +323,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand">
+        <img src="images/bravosWeb.gif" width="50" height="80" style="padding-top:10px;">
+        </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
         <li><a href="#team">Bravos</a></li>
-        <li><a href="#">Results</a></li>
-        <li><a href="#">Records</a></li>  
+         
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
           <span class="caret"></span></a>
@@ -304,17 +340,9 @@
             <li><a href="#">Videos</a></li>
           </ul>
         </li>
-        <li><a href="#">Sponsors</a></li>  
+        <li><a href="#sponsors">Sponsors</a></li>  
         <li><a href="#contact">Contact Us</a></li>  
-       <!-- <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li>
-          </ul>
-        </li>-->
+        
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
@@ -332,7 +360,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/summerT20_2016.jpg" alt="Summer T20 2016" width="1200" height="700">
+        <img src="images/bravosPrisma.jpeg" alt="Summer T20 2016" width="1200" height="700">
         <div class="carousel-caption">
           <h3>Summer T20 2016</h3>
           <p>Bravos...</p>
@@ -356,16 +384,14 @@
 </div>
 
 <div id=team class="container text-center" ng-controller="myCtrl">
-    Our Team <br>
+   <h3> Our Team </h3>
     <div class="row">
         <div class="col-sm-2" ng-repeat="player in players|limitTo:6"> 
         <p class="text-center" >{{player.name}}
             <img ng-src={{player.imageUrl}} alt="image" class="img-circle person" width="125" height="125"></p>
         </div>
     </div>
-    <div>
-        <a href="">More..</a>
-    </div>
+    
 </div>
     
     
@@ -373,7 +399,6 @@
 <div id="band" class="container text-center">
   <h3>TOP PERFORMERS</h3>
   <p><em>2016</em></p>
-  <p>Top Performers</p>
   <br>
   <div class="row">
     <div class="col-sm-4">
@@ -381,10 +406,9 @@
       <a href="#demo" data-toggle="collapse">
         <img src="images/KarthikRayala.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
-        <p>Guitarist and Lead Vocalist</p>
-        <p>Loves long walks on the beach</p>
-        <p>Member since 1988</p>
+      <div id="demo" >
+        <p>Tournament: </p>
+        <p>Total Runs:</p>
       </div>
     </div>
     <div class="col-sm-4">
@@ -392,10 +416,9 @@
       <a href="#demo2" data-toggle="collapse">
         <img src="images/KarthikRayala.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
-      <div id="demo2" class="collapse">
-        <p>Drummer</p>
-        <p>Loves drummin'</p>
-        <p>Member since 1988</p>
+      <div id="demo2" >
+        <p>Tournament: </p>
+        <p>Total Runs:</p>
       </div>
     </div>
     <div class="col-sm-4">
@@ -403,34 +426,33 @@
       <a href="#demo3" data-toggle="collapse">
         <img src="images/KarthikRayala.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
+      <div id="demo3">
+        <p>Tournament: </p>
+        <p>Total Runs:</p>
       </div>
     </div>
   </div>
 </div>
+    
+<div id="sponsors" class="container text-center">
+<h3>Our Sponsors</h3>
+<br>
+<div class="row">
+    <img src="images/sponsors/TP-LogoWithText.jpg.jpeg" width="255" height="300">
+</div>    
+</div>   
 
 <!-- Container (Contact Us Section) -->
 <div id="contact" class="container text-center">
   <h3>Contact Us</h3>
   <br>
   <div class="row">
-    <div class="">
+    <div>
       <p class="text-center"><strong>Please email us at <a href="mailto:admin@bayareabravos.com">admin@bayareabravos.com</a> or call us @ (925) 400-3552</strong></p><br>
     </div>
   </div>
 </div>
 
-
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-    <p><a>some text...</a></p>
-</footer>
 
 <script>
 $(document).ready(function(){
