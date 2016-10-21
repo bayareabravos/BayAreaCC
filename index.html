@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="demoApp">
 <head>
   <title>Bay Area Bravos</title>
   <meta charset="utf-8">
@@ -9,9 +9,275 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>    
     <link rel="stylesheet" href="stylesheet.css">
+    
+<script>
+   var demoApp = angular.module('demoApp', []);  
+   demoApp.controller('myCtrl', function($scope) {
+    $scope.players = [
+        {name:'Anand Kannan',imageUrl:'images/blankImage.gif'},
+        {name:'Anirudh Nagesh',imageUrl:'images/blankImage.gif'},
+        {name:'Anoop Dhaliwal',imageUrl:'images/blankImage.gif'},
+        {name:'Arun Muniswamy',imageUrl:'images/blankImage.gif'},
+        {name: 'ArunKumarKasa',imageUrl: 'images/blankImage.gif'},
+        {name: 'AshokKumar',imageUrl: 'images/blankImage.gif'},
+        {
+    name: 'BarryManogaran',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'BijuNair',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'BrahmamChunduri',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'DevarajMarichamy',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'DhivaMuruganatham',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'DilipTummala',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'GiriIyer',
+    imageUrl: 'images/blankImage.gif'
+},
+        {
+    name: 'HarshitKapoor',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'JaideepShah',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'KarthikRayala',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'KarthikBhatt',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'KashyapAnanth',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'KishoreKatukam',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'KrishnanSasikumar',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'Lokesh',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'MasiMohammed',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'MuthukumarChakravarthy',
+    imageUrl: 'images/blankImage.gif'
+},
+        {
+    name: 'NandaKishore',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'NikhilYerragonda',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'NishabB',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'PaneerSelvam',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'PradeepReddy',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'PraffulCherukumalli',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'PrasadKakani',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'PratikSonawala',
+    imageUrl: 'images/blankImage.gif'
+},
+        {
+    name: 'RadDesiraju',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RaghavVaradarajan',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RajuvSharma',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RajivOnat',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RamReddy',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RamPrasad',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RamakrishnaBatchala',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RameshRavichandran',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RaviPorandla',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RiazMohammed',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RushabhShah',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'RutwikChunduri',
+    imageUrl: 'images/blankImage.gif'
+},{
+    name: 'SaiGiridhar',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SaiRajuYata',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SaikiranTodusu',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SajitKrishnan',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SameerKhurana',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SandeepMehta',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SantoshNarayan',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SarathTammineni',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SreekarYallapragada',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SridarRajagopalan',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SriniSalver',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SudhakarArumugham',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SudhakarHebbar',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SudheerMalladi',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SunnyRohithNandi',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SunnyMoza',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SureshPachaiappan',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SureshChirukuri',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'SushilDhar',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'TarunKhanna',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'TusharDesai',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'VaibhavMankame',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'VaibhavShukla',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'VinodGattu',
+    imageUrl: 'images/blankImage.gif'
+},
+{
+    name: 'VishalGandhi',
+    imageUrl: 'images/blankImage.gif'
+}
+        
+    ]
+        
+});
+</script>
+    
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" >
 
   
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -27,10 +293,18 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">Bravos</a></li>
-        <li><a href="#tour">The Team</a></li>
+        <li><a href="#team">Bravos</a></li>
         <li><a href="#">Results</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Records</a></li>  
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sponsors</a></li>  
         <li><a href="#contact">Contact Us</a></li>  
        <!-- <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
@@ -63,7 +337,11 @@
           <h3>Summer T20 2016</h3>
           <p>Bravos...</p>
         </div>
+          
+          
       </div>
+        
+       
     </div>
 
     <!-- Left and right controls -->
@@ -77,12 +355,21 @@
     </a>
 </div>
 
-<div class="container text-center">
-    Latest match results
+<div id=team class="container text-center" ng-controller="myCtrl">
+    Our Team <br>
+    <div class="row">
+        <div class="col-sm-2" ng-repeat="player in players|limitTo:6"> 
+        <p class="text-center" >{{player.name}}
+            <img ng-src={{player.imageUrl}} alt="image" class="img-circle person" width="125" height="125"></p>
+        </div>
+    </div>
+    <div>
+        <a href="">More..</a>
+    </div>
 </div>
     
     
-<!-- Container (Top Performers Section) -->
+ <!--Container (Top Performers Section) -->
 <div id="band" class="container text-center">
   <h3>TOP PERFORMERS</h3>
   <p><em>2016</em></p>
@@ -136,6 +423,16 @@
   </div>
 </div>
 
+<!-- Container (Contact Us Section) -->
+<div id="contact" class="container text-center">
+  <h3>Contact Us</h3>
+  <br>
+  <div class="row">
+    <div class="">
+      <p class="text-center"><strong>Please email us at <a href="mailto:admin@bayareabravos.com">admin@bayareabravos.com</a> or call us @ (925) 400-3552</strong></p><br>
+    </div>
+  </div>
+</div>
 
 
 <!-- Footer -->
