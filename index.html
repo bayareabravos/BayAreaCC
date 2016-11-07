@@ -9,329 +9,30 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>    
-    <link rel="stylesheet" href="stylesheet.css">
-    
-<script>
-   var demoApp = angular.module('demoApp', []);  
-   demoApp.controller('myCtrl', function($scope) {
-    $scope.players = [
-        {name:'Anand Kannan',imageUrl:'images/blankImage.gif'},
-        {name:'Anirudh Nagesh',imageUrl:'images/blankImage.gif'},
-        {name:'Anoop Dhaliwal',imageUrl:'images/blankImage.gif'},
-        {name:'Arun Muniswamy',imageUrl:'images/blankImage.gif'},
-        {name: 'ArunKumarKasa',imageUrl: 'images/blankImage.gif'},
-        {name: 'AshokKumar',imageUrl: 'images/blankImage.gif'},
-        {
-    name: 'BarryManogaran',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'BijuNair',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'BrahmamChunduri',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'DevarajMarichamy',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'DhivaMuruganatham',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'DilipTummala',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'GiriIyer',
-    imageUrl: 'images/blankImage.gif'
-},
-        {
-    name: 'HarshitKapoor',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'JaideepShah',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'KarthikRayala',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'KarthikBhatt',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'KashyapAnanth',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'KishoreKatukam',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'KrishnanSasikumar',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'Lokesh',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'MasiMohammed',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'MuthukumarChakravarthy',
-    imageUrl: 'images/blankImage.gif'
-},
-        {
-    name: 'NandaKishore',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'NikhilYerragonda',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'NishabB',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'PaneerSelvam',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'PradeepReddy',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'PraffulCherukumalli',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'PrasadKakani',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'PratikSonawala',
-    imageUrl: 'images/blankImage.gif'
-},
-        {
-    name: 'RadDesiraju',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RaghavVaradarajan',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RajuvSharma',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RajivOnat',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RamReddy',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RamPrasad',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RamakrishnaBatchala',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RameshRavichandran',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RaviPorandla',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RiazMohammed',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RushabhShah',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'RutwikChunduri',
-    imageUrl: 'images/blankImage.gif'
-},{
-    name: 'SaiGiridhar',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SaiRajuYata',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SaikiranTodusu',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SajitKrishnan',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SameerKhurana',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SandeepMehta',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SantoshNarayan',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SarathTammineni',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SreekarYallapragada',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SridarRajagopalan',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SriniSalver',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SudhakarArumugham',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SudhakarHebbar',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SudheerMalladi',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SunnyRohithNandi',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SunnyMoza',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SureshPachaiappan',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SureshChirukuri',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'SushilDhar',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'TarunKhanna',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'TusharDesai',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'VaibhavMankame',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'VaibhavShukla',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'VinodGattu',
-    imageUrl: 'images/blankImage.gif'
-},
-{
-    name: 'VishalGandhi',
-    imageUrl: 'images/blankImage.gif'
-}
-        
-    ]
-        
-});
-    
-    
-    
-demoApp.controller('topPerformers', function($scope) {
-    $scope.performers = [
-        {
-            LeagueName:'NCCA Premier Prestige 2016'
-            players:[]
-        }
-        {
-            name:'Barry Manogaran',
-            category:'Best Batsman',
-            runs:'643',
-            wickets:'',
-            stats:'',
-            imageUrl: 'images/blankImage.gif'
-        },
-        {
-            name:'Karthik Rayala',
-            category:'Best Bowler',
-            runs:'',
-            wickets:'41',
-            stats:'',
-            imageUrl: 'images/blankImage.gif'
-        },
-        {
-            name:'Sai Giridhar',
-            category:'Best Fielder',
-            runs:'',
-            wickets:'',
-            stats:'19',
-            imageUrl: 'images/blankImage.gif'
-        }
-    ]
-});
-</script>
-    
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="js/bravo.js"></script>    
 </head>
+    
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" >
-         
-
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+     <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand">
+      </button>-->
+      <a class="navbar-brand img">
         <img src="images/bravosWeb.gif" width="50" height="80" style="padding-top:10px;">
         </a>
     </div>
+      
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
         <li><a href="#team">Bravos</a></li>
-         
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
           <span class="caret"></span></a>
@@ -340,39 +41,35 @@ demoApp.controller('topPerformers', function($scope) {
             <li><a href="#">Videos</a></li>
           </ul>
         </li>
+          <li><a href="#performers">Performers</a></li>
+          <li><a href="#trophy">Trophy Cabinet</a></li>
         <li><a href="#sponsors">Sponsors</a></li>  
         <li><a href="#contact">Contact Us</a></li>  
-        
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    <!-- Indicators 
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    </ol>-->
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <img src="images/bravosPrisma.jpeg" alt="Summer T20 2016" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Summer T20 2016</h3>
-          <p>Bravos...</p>
+          <!--<h3>Summer T20 2016</h3>
+          <p>Bravos...</p>-->
         </div>
-          
-          
-      </div>
-        
-       
+      </div>   
     </div>
 
-    <!-- Left and right controls -->
+    <!-- Left and right controls
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -380,62 +77,92 @@ demoApp.controller('topPerformers', function($scope) {
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
-    </a>
+    </a> -->
 </div>
 
 <div id=team class="container text-center" ng-controller="myCtrl">
-   <h3> Our Team </h3>
+    <h3> Our <span class="secondary-title">Team</span> </h3>
     <div class="row">
-        <div class="col-sm-2" ng-repeat="player in players|limitTo:6"> 
-        <p class="text-center" >{{player.name}}
-            <img ng-src={{player.imageUrl}} alt="image" class="img-circle person" width="125" height="125"></p>
+        <div class="col-sm-3" ng-repeat="player in players" ng-if="player.status == 'active'">
+        <p class="text-center" >
+            <img ng-src={{player.imageUrl}} alt="image" class="img-circle person"><br>
+            {{player.name}}
+            </p>
         </div>
+            
     </div>
     
 </div>
     
     
  <!--Container (Top Performers Section) -->
-<div id="band" class="container text-center">
-  <h3>TOP PERFORMERS</h3>
-  <p><em>2016</em></p>
+<div id="performers" class="container text-center">
+  <h3>TOP <span class="secondary-title">PERFORMERS</span></h3>
+  <p><em>Premier Prestige 2016</em></p>
   <br>
   <div class="row">
     <div class="col-sm-4">
       <p class="text-center"><strong>Best Batsman</strong></p><br>
       <a href="#demo" data-toggle="collapse">
-        <img src="images/KarthikRayala.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="images/players/Barry.jpg" class="img-circle person" >
       </a>
-      <div id="demo" >
-        <p>Tournament: </p>
-        <p>Total Runs:</p>
+      <div>
+        <p>Barry Manogaran</p>
+        <p>Total Runs: 643</p>
       </div>
     </div>
     <div class="col-sm-4">
       <p class="text-center"><strong>Best Bowler</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="images/KarthikRayala.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+     
+        <a href="#demo2" data-toggle="collapse">
+        <img src="images/players/KarthikRayala.jpg" class="img-circle person" >
       </a>
-      <div id="demo2" >
-        <p>Tournament: </p>
-        <p>Total Runs:</p>
+        
+      <div>
+        <p>Karthik Rayala</p>
+        <p>Total wickets: 41</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Best Allrounder</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="images/KarthikRayala.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      <p class="text-center"><strong>Best Fielder</strong></p><br>
+      <p class="text-center">
+          <a href="#demo3" data-toggle="collapse">
+        <img src="images/players/RamPrasad.jpg" class="img-circle person" >
       </a>
-      <div id="demo3">
-        <p>Tournament: </p>
-        <p>Total Runs:</p>
+        </p>
+        
+      <div>
+        <p>Ram Prasad</p>
+          <p>Catches: 14, Stumpings: 3</p>
+          
       </div>
     </div>
   </div>
 </div>
     
+  
+    
+<div id="trophy" class="container text-center" ng-controller="trophies">
+    <h3>Trophy <span class="secondary-title">Cabinet</span></h3>
+    <br>
+    <div class="col-sm-4" ng-repeat="trophy in trophies">
+    <i class="fa fa-trophy" style="font-size:48px;color:gold"></i><br>
+        {{trophy.name}}
+      </div>
+    
+    </div>
+    
+<div id="highlights" class="container text-center" ng-controller="highlights">
+    <h3>Key <span class="secondary-title">Highlights</span></h3>
+    
+      <div ng-repeat="hText in highlights">
+         <p>{{hText.highlight}}</p>
+      </div>
+      
+</div>      
+    
 <div id="sponsors" class="container text-center">
-<h3>Our Sponsors</h3>
+    <h3>Our <span class="secondary-title">Sponsors</span></h3>
 <br>
 <div class="row">
     <img src="images/sponsors/TP-LogoWithText.jpg.jpeg" width="255" height="300">
@@ -444,7 +171,7 @@ demoApp.controller('topPerformers', function($scope) {
 
 <!-- Container (Contact Us Section) -->
 <div id="contact" class="container text-center">
-  <h3>Contact Us</h3>
+    <h3>Contact <span class="secondary-title">Us</span></h3>
   <br>
   <div class="row">
     <div>
